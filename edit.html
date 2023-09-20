@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edição de Tabela</title>
+</head>
+<body>
+    <h1>Edição de Tabela</h1>
+
+    <!-- Tabela para exibir e editar dados -->
+    <table id="tabelaDados">
+        <!-- Cabeçalho da tabela -->
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Data de Início</th>
+                <th>Data de Término</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <!-- Corpo da tabela será preenchido com dados dinamicamente -->
+        <tbody></tbody>
+    </table>
+
+    <!-- Formulário para adicionar novos registros -->
+    <h2>Adicionar Novo Registro</h2>
+    <form id="formulario">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required><br>
+
+        <label for="data_inicio">Data de Início:</label>
+        <input type="date" id="data_inicio" required><br>
+
+        <label for="data_termino">Data de Término:</label>
+        <input type="date" id="data_termino" required><br>
+
+        <button type="submit">Adicionar</button>
+    </form>
+
+    <!-- Inclua o arquivo JavaScript para interagir com o banco de dados -->
+    <script src="db.js"></script>
+</body>
+</html>
